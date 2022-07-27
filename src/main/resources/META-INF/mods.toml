@@ -6,35 +6,16 @@ loaderVersion="[41,)"
 # The license for your mod. This is mandatory and allows for easier comprehension of your redistributive properties.
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
 license="All Rights Reserved"
-# A URL to refer people to when problems occur with this mod
-issueTrackerURL="https://github.com/MinecraftForge/MinecraftForge/issues"
-# If the mods defined in this file should show as separate resource packs
-showAsResourcePack=false
 
 [[mods]]
   modId="tutorialmod"
   version="1.0.0.0"
-  displayName="Tutorial Mod"
-  updateJSONURL=""
-  displayURL=""
+  displayName="Tutorial Mod :v"
+  #updateJSONURL=""
+  #displayURL=""
   logoFile=""
-  credits="I'd like to thank my mother and father."
+  credits="Like y suscribe!!"
   authors="Codigo Morsa"
   description='''
-  Lets you craft dirt into diamonds. This is a traditional mod that has existed for eons. It is ancient. The holy Notch created it. Jeb rainbowfied it. Dinnerbone made it upside down. Etc.
+  Raza estamos de vuelta con los mods de Minecraft
   '''
-  displayTest="MATCH_VERSION"
-
-  [[dependencies.tutorialmod]]
-    modId="forge"
-    mandatory=true
-    versionRange="[41,)"
-    ordering="NONE"
-    side="BOTH"
-
-  [[dependencies.tutorialmod]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.19,1.20)"
-    ordering="NONE"
-    side="BOTH"
