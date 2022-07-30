@@ -1,6 +1,7 @@
 package com.codigomorsa.tutorialmod.init;
 
 import com.codigomorsa.tutorialmod.Tutorialmod;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,7 +13,18 @@ public class ItemInit {
             ForgeRegistries.ITEMS, Tutorialmod.MODID
     );
 
-    public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register(
-            "example_item", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+    public static final RegistryObject<Item> RAMEN = ITEMS.register(
+            "ramen", () -> new Item(new Item.Properties()
+                    .tab(CreativeModeTab.TAB_FOOD)
+                    .food(new FoodProperties.Builder().alwaysEat().build())
+            )
+    );
+
+    public static final RegistryObject<Item> YOSHI_EGG = ITEMS.register(
+            "yoshi_egg", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+    );
+
+    public static final RegistryObject<Item> POKEBALL = ITEMS.register(
+            "pokeball", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
     );
 }
