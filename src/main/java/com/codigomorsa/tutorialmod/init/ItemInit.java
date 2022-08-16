@@ -4,6 +4,7 @@ import com.codigomorsa.tutorialmod.Tutorialmod;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ThrowablePotionItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -25,6 +26,6 @@ public class ItemInit {
     );
 
     public static final RegistryObject<Item> POKEBALL = ITEMS.register(
-            "pokeball", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+            "pokeball", () -> new ThrowablePotionItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
     );
 }
