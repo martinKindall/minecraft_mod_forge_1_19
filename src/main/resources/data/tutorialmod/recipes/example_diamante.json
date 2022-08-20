@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "   ",
+    "OOO"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bone"
+    },
+    "O": {
+      "item": "minecraft:acacia_leaves"
+    }
+  },
+  "result": {
+    "item": "minecraft:diamond"
+  }
+}
