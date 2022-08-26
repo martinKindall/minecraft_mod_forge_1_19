@@ -34,4 +34,20 @@ public class ItemInit {
                     3.5f,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
     );
+
+    public static final RegistryObject<SwordItem> ICESWORD = ITEMS.register(
+            "icesword", () -> new SwordItem(
+                    Tiers.NETHERITE,
+                    5,
+                    3.5f,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+    );
+
+    public static final RegistryObject<SwordItem> WARHAMMER = ITEMS.register(
+            "warhammer", () -> new SwordItem(
+                    Tiers.NETHERITE,
+                    5,
+                    3.5f,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+    );
 }

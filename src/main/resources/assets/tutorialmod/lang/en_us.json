@@ -6,5 +6,7 @@
   "block.tutorialmod.example_block": "Example Block",
   "block.tutorialmod.bob_sponge_block": "Bob Sponge Block",
   "block.tutorialmod.java_block": "Java Block",
-  "item.tutorialmod.firesword": "Espada de fuego :v"
+  "item.tutorialmod.firesword": "Espada de fuego :v",
+  "item.tutorialmod.icesword": "Espada de hielo :v",
+  "item.tutorialmod.warhammer": "Espada de hielo :v"
 }
