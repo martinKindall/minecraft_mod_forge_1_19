@@ -50,4 +50,13 @@ public class ItemInit {
                     3.5f,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
     );
+
+    public static final RegistryObject<SwordItem> HACHAHIELO = ITEMS.register(
+            "hachahielo", () -> new SwordItem(
+                    Tiers.NETHERITE,
+                    5,
+                    3.5f,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)
+            )
+    );
 }
