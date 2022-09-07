@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:java_block",
+    "tutorialmod:example_block",
+    "tutorialmod:bob_sponge_block"
+  ]
+}

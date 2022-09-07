@@ -1,5 +1,6 @@
 package com.codigomorsa.tutorialmod;
 
+import com.codigomorsa.tutorialmod.eventos.MisEventos;
 import com.codigomorsa.tutorialmod.events.MyEventHandler;
 import com.codigomorsa.tutorialmod.init.BlockInit;
 import com.codigomorsa.tutorialmod.init.ItemInit;
@@ -17,6 +18,6 @@ public class Tutorialmod {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
-        EVENT_BUS.register(new MyEventHandler());
+        EVENT_BUS.register(new MisEventos());
     }
 }
