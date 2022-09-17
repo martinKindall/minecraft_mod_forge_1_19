@@ -1,6 +1,7 @@
 package com.codigomorsa.tutorialmod.init;
 
 import com.codigomorsa.tutorialmod.Tutorialmod;
+import com.codigomorsa.tutorialmod.items.Pokeball;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
@@ -24,7 +25,7 @@ public class ItemInit {
     );
 
     public static final RegistryObject<Item> POKEBALL = ITEMS.register(
-            "pokeball", () -> new ThrowablePotionItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+            "pokeball", () -> new Pokeball(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
     );
 
     public static final RegistryObject<SwordItem> FIRESWORD = ITEMS.register(

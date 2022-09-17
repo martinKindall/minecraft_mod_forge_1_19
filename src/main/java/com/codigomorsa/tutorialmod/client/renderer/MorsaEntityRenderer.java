@@ -14,7 +14,7 @@ public class MorsaEntityRenderer extends MobRenderer<MorsaEntity, MorsaModel> {
             new ResourceLocation(Tutorialmod.MODID, "textures/entities/morsa.png");
 
     public MorsaEntityRenderer(EntityRendererProvider.Context context) {
-        super(context, new MorsaModel(context.bakeLayer(MorsaModel.LAYER_LOCATION)), 1f);
+        super(context, new MorsaModel(context.bakeLayer(MorsaModel.LAYER_LOCATION)), 0.25f);
     }
 
     @Override

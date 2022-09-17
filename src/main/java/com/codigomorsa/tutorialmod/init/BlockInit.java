@@ -18,7 +18,7 @@ public class BlockInit {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Tutorialmod.MODID);
 
     public static final RegistryObject<Block> EXAMPLE_BLOCK = register("example_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).friction(0f).strength(5f).requiresCorrectToolForDrops()),
+            () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).friction(0.5f).strength(5f).requiresCorrectToolForDrops()),
             new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS));
 
     public static final RegistryObject<Block> BOB_SPONGE_BLOCK = register("bob_sponge_block",
