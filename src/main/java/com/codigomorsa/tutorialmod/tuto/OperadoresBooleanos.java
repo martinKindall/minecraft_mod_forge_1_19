@@ -21,5 +21,10 @@ public class OperadoresBooleanos {
         boolean hayAlgunaPanaderiaAbierta = estaAbiertaPanaderiaCarlitos || estaAbiertaPanaderiaDondeMaria;
 
         println("Hay alguna panaderia abierta? " + hayAlgunaPanaderiaAbierta);
+
+        // NOT operador -> transforma false a true, o true a false
+        println((!false) + "");
+
+        println("Estan todas las panaderias cerradas? " + !hayAlgunaPanaderiaAbierta);
     }
 }
