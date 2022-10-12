@@ -4,8 +4,8 @@ import com.codigomorsa.tutorialmod.eventos.MobsAttrsEvent;
 import com.codigomorsa.tutorialmod.eventos.MobsRendererEvents;
 import com.codigomorsa.tutorialmod.eventos.ModAttrsEvent;
 import com.codigomorsa.tutorialmod.eventos.ModClientEvents;
-import com.codigomorsa.tutorialmod.init.BlockInit;
-import com.codigomorsa.tutorialmod.init.ItemInit;
+import com.codigomorsa.tutorialmod.events.MyEventHandler;
+import com.codigomorsa.tutorialmod.init.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -28,5 +28,12 @@ public class Tutorialmod {
         EVENT_BUS.register(new MobsAttrsEvent());
         EVENT_BUS.register(new MobsRendererEvents());
         MOBS.register(bus);
+        ConfigureFeatureInit.CONFIGURED_FEATURES.register(bus);
+        PlacedFeatureInit.PLACED_FEATURE.register(bus);
+
+        ConfigurarFeatureInit.CONFIGURED_FEATURES.register(bus);
+        ColocarFeatureInit.PLACED_FEATURE.register(bus);
+
+        EVENT_BUS.register(new MyEventHandler());
     }
 }

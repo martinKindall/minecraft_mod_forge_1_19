@@ -9,7 +9,7 @@ public class Summon {
         if (server != null) {
             var stack = server.createCommandSourceStack();
             var pos = player.position();
-            player.getServer().getCommands().performCommand(
+            server.getCommands().performCommand(
                     stack,
                     "summon " + entity + " " + pos.x + " " + pos.y + " " + pos.z);
         }
