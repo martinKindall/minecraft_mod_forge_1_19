@@ -1,9 +1,6 @@
 package com.codigomorsa.tutorialmod;
 
-import com.codigomorsa.tutorialmod.eventos.MobsAttrsEvent;
-import com.codigomorsa.tutorialmod.eventos.MobsRendererEvents;
-import com.codigomorsa.tutorialmod.eventos.ModAttrsEvent;
-import com.codigomorsa.tutorialmod.eventos.ModClientEvents;
+import com.codigomorsa.tutorialmod.eventos.*;
 import com.codigomorsa.tutorialmod.events.MyEventHandler;
 import com.codigomorsa.tutorialmod.init.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -35,5 +32,6 @@ public class Tutorialmod {
         ColocarFeatureInit.PLACED_FEATURE.register(bus);
 
         EVENT_BUS.register(new MyEventHandler());
+        EVENT_BUS.register(new MisHechizos());
     }
 }

@@ -3,6 +3,7 @@ package com.codigomorsa.tutorialmod.init;
 import com.codigomorsa.tutorialmod.Tutorialmod;
 import com.codigomorsa.tutorialmod.items.Pokeball;
 import com.codigomorsa.tutorialmod.items.Varita;
+import com.codigomorsa.tutorialmod.items.VaritaHielo;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
@@ -64,5 +65,9 @@ public class ItemInit {
 
     public static final RegistryObject<Item> VARITA = ITEMS.register(
             "varita", () -> new Varita(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+    );
+
+    public static final RegistryObject<Item> VARITA_HIELO = ITEMS.register(
+            "varita_hielo", () -> new VaritaHielo(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
     );
 }

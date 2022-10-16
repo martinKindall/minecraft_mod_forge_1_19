@@ -54,7 +54,7 @@ public class MyEventHandler {
             if (item.is(VARITA.get()) && server != null) {
                 var stack = server.createCommandSourceStack();
                 var pos = event.getPlayer().position();
-                var command = "fill " + (int)(pos.x - 10) + " " + (int)(pos.y - 10) + " " + (int)(pos.z - 10) + " " + (int)(pos.x + 10) + " " + (int)(pos.y + 10) + " " + (int)(pos.z - 5) + " minecraft:lava replace minecraft:grass_block";
+                var command = "fill " + (int)(pos.x - 10) + " " + (int)(pos.y - 10) + " " + (int)(pos.z - 10) + " " + (int)(pos.x + 10) + " " + (int)(pos.y + 10) + " " + (int)(pos.z + 10) + " minecraft:lava replace minecraft:grass_block";
                 server.getCommands().performCommand(
                         stack,
                         command
